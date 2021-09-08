@@ -23,7 +23,7 @@ public class ClientController {
     public  Long getAbonnement(@PathVariable(name="code") String code){
     Client client=this.clientRepository.findClientByCode(code);
     if(client!=null){
-        System.out.println(clietn.getId());
+        System.out.println(client.getId());
         return client.getId();
     }
     else{
